@@ -19,8 +19,9 @@ import streamlit as st
 from storage import get_storage
 
 # ── Config ────────────────────────────────────────────────────────────────
-CSV_PATH = Path(r"E:\Downloads\bengali chart qa\New folder\images_png\PA\final_batch.csv")
-IMAGES_DIR = Path(r"E:\Downloads\bengali chart qa\New folder\images_png\PA")
+DATA_DIR = Path(__file__).parent / "data"
+CSV_PATH = DATA_DIR / "final_batch.csv"
+IMAGES_DIR = DATA_DIR / "images"
 PILOT_IMAGES = None  # None = review the whole CSV
 
 REVIEWERS = ["Anirban", "Ayman", "Mahir"]  # swap in real names before sharing
